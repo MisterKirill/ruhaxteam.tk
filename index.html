@@ -16,24 +16,11 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-    @keyframes players {
-        0% {
-            opacity: 0;
-            margin-left: 0;
-        }
-        10% {
-            opacity: 1;
-        }
-        85% {
-            opacity: 1;
-        }
-        95% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 0;
-            margin-left: 340px;
-        }
+    .hover {
+        transition: 0.2s opacity;
+    }
+    .hover:hover {
+        opacity: 0.7;
     }
 
     @media screen and (max-width: 510px) {
@@ -46,12 +33,12 @@
 </style>
 <body style="background-color: black; font-family: 'Montserrat', sans-serif;">
     <div class="d-flex flex-column align-items-center container justify-center">
-        <a href="/team" class="position-absolute px-4"><img src="assets/ruhax.png" alt="RuHax" width="250"></a>
+        <img class="position-absolute px-4" src="assets/ruhax.png" alt="RuHax" width="250">
         <ul class="d-flex flex-wrap justify-content-center gap-3" style="margin-top: 280px;">
-            <a class="nav-link text-light" href="/servers">Сервера</a>
-            <a class="nav-link text-light" href="/mods">Моды</a>
-            <a class="nav-link text-light" href="/textures">Текстур-паки</a>
-            <a class="nav-link text-light" href="/programs">Программы</a>
+            <a class="nav-link text-light hover" href="/servers">Сервера</a>
+            <a class="nav-link text-light hover" href="/mods">Моды</a>
+            <a class="nav-link text-light hover" href="/textures">Текстур-паки</a>
+            <a class="nav-link text-light hover" href="/programs">Программы</a>
         </ul>
     </div>
 
